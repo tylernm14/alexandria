@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2019_11_26_093623) do
     t.string "cover"
     t.integer "price_cents", default: 0, null: false
     t.string "price_currency", default: "USD", null: false
-    t.text "download_ur"
+    t.text "download_url"
     t.index ["author_id"], name: "index_books_on_author_id"
     t.index ["isbn_10"], name: "index_books_on_isbn_10"
     t.index ["isbn_13"], name: "index_books_on_isbn_13"
