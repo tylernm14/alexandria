@@ -41,5 +41,6 @@ module Alexandria
     config.api_only = true
     # filter out base64 encoded image files from logs
     config.filter_parameters += [:cover]
+    config.middleware.use Rack::Deflater
   end
 end
